@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center; 
+    font-size: 30px; 
+    color: #333;
+    margin-bottom: 40px;
+    padding: 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Left Side: News List */
+.news-section {
+    flex: 2;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* News Item Row */
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-image {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-title {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.news-description {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.news-meta {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Right Side: Weather Info */
+.weather-section {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: fit-content;
+}
+
+.weather-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.weather-controls input, .weather-controls select, .weather-controls button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.weather-controls button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.weather-controls button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weather-description {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Holiday Section */
+.holiday-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.holiday-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#country-input {
+    width: 90%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#fetch-holidays {
+    width: 100%; 
+    padding: 12px 15px; 
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#fetch-holidays:hover {
+    background-color: #0056b3;
+}
+
+/* Holiday Container */
+.holiday-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.holiday-item {
+    margin-bottom: 10px;
+}
+
+.holiday-name {
+    font-weight: bold;
+}
+
+.holiday-date {
+    color: #6c757d;
+}

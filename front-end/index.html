@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>NEWS DASHBOARD</h1>
+
+    <div class="container">
+        <!-- Left Side: News List -->
+        <div class="news-section">
+            <h2>Latest News</h2>
+            <div id="news-container"></div>
+        </div>
+
+        <!-- Right Side: Weather Info -->
+        <div class="weather-section">
+            <h2>Weather Info</h2>
+            
+            <div class="weather-controls">
+                <input type="text" id="city-input" placeholder="Enter a city (e.g., Oshawa)">
+                <select id="time-select">
+                    <option value="current">Current Weather</option>
+                    <option value="forecast">Next 3 Hours Forecast</option>
+                </select>
+                <button id="fetch-weather">Get Weather</button>
+            </div>
+
+            <div id="weather-container">
+            <p>Enter a location and time, then click "Get Weather".</p>
+        </div>
+
+        <!-- Holiday Info Section -->
+        <div class="holiday-section">
+            <h2>Upcoming Holidays</h2>
+            <div>
+                <!-- <label for="country-input">Enter Country Code:</label> -->
+                <input type="text" id="country-input" placeholder="Type country code (e.g., US, CA, VN)">
+                <button id="fetch-holidays">Check Holidays</button>
+            </div>
+            <div id="holiday-container">
+                <!-- Holiday data will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
