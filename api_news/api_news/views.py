@@ -54,4 +54,5 @@ class AggregatedDataView(APIView):
         }
 
         return Response(aggregated_data)
-
+    
+    

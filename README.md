@@ -1,4 +1,17 @@
-# Weather & News Dashboard
+# 🌦️📰 Weather & News Dashboard
+
+## 📋 Table of Contents
+
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Prerequisites](#️-prerequisites)
+- [Project Setup](#-project-setup)
+- [Updating feature](#-updating-feature)
+- [Author](#-author)
+
+---
+
+## 📋 Introduction
 
 This project provides a web dashboard that aggregates data from multiple publicly available APIs. The dashboard displays the latest news, weather information, and upcoming holidays. It consists of two main components:
 
@@ -9,7 +22,7 @@ The project is containerized using Docker and orchestrated with Docker Compose f
 
 ---
 
-## Features
+## 🌟 Features
 
 - **Latest News**: Displays the latest news fetched from a news API.
 - **Weather Information**: Fetches current data for a specified city.
@@ -18,7 +31,7 @@ The project is containerized using Docker and orchestrated with Docker Compose f
 
 ---
 
-## Prerequisites
+## ⚙️ Prerequisites
 
 Before running the project, ensure that you have the following installed:
 
@@ -27,7 +40,7 @@ Before running the project, ensure that you have the following installed:
 
 ---
 
-## Project Setup
+## 🚀 Project Setup
 
 ### 1. Clone the Repository
 
@@ -41,11 +54,13 @@ cd weather-news-holidays-dashboard
 ```
 
 ### 2. Build and Start Services
+
 From the project root directory, run the following command:
 
 ```bash
 docker-compose up --build
 ```
+
 This command will:
 
 - Build the backend (Django API) and frontend (Dashboard) Docker images.
@@ -59,3 +74,11 @@ This command will:
 ### 3. Access the Dashboard
 
 Once the services are up and running, open your browser and navigate to http://localhost:8080 to access the weather and news dashboard.
+
+## 📆 Updating feature:
+-  **Holiday Calendar Integration**: 
+    - Display holidays using an interactive calendar
+    - Highlight upcoming holidays
+
+## 👩‍💻 Author
+Thi Ty Tran
